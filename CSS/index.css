@@ -1,0 +1,175 @@
+nav{
+
+  background-color: #2d4576;
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li{
+  display: inline-block;
+  width:  24%;
+  text-align: center;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font: 20px helvetica, serif;
+}
+
+head{
+  margin-bottom: 20px;
+}
+.header{
+  text-align: center;
+}
+h1.header{
+  color: black;
+  margin-top: 0;
+  font: bold 40px helvetica, serif;
+  text-align: center;
+  padding:  10%;
+  padding-bottom: 0px;
+}
+
+h2.header{
+  padding: 60px;
+  padding-bottom: 0px;
+  color: black;
+  font: bold 30px helvetica, serif;
+  text-align: left;
+}
+
+body{
+  background-color: #2d4576;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  min-height: 450px;
+  margin-bottom: 20px;
+}
+p{
+  font: 20px helvetica, serif;
+  align-content: center;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#Title{
+  background-image: url("../Images/cobb.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #33384C;
+  min-height: 100vh;
+  padding: 0 0 1px 0;
+}
+
+#AboutMe{
+  background-image: url("../Images/colorbk.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0 0 1px 0;
+}
+
+#Portfilo{
+  background-image: url("../Images/port.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #33384C;
+  min-height: 100vh;
+  padding: 0 0 1px 0;
+}
+#Interest{
+  background-image: url("../Images/picbk.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0 0 1px 0;
+}
+#Interest img{
+  width: 20%;
+  height: auto;
+  margin-left: 50px;
+  margin-left: 40px;
+  align: center;
+
+}
+#Dance_pic{
+  float: left;
+  width: 40% !important;
+}
+
+#Dance_p{
+  margin-left: 0px;
+  overflow:auto;
+  display:block;
+}
+#Tiny_dancer::after{
+  content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+#Contact{
+  background-image: url("../Images/geo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: 0 0 1px 0;
+}
+
+
+form{
+  font: 20px helvetica, serif;
+  padding: 90px;
+  text-align: left;
+}
+#message textarea {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    font: 20px helvetica, serif;
+}
+
+.placeholder{
+  text-align: right;
+  align-content: flex-start;
+}
+footer {
+  color: white;
+  font: 20px helvetica, serif;
+  text-align: center;
+}
+
+footer div{
+  display: inline-block;
+  width: 46%;
+  margin-bottom: 20px;
+}
+
+#contactHalf div{
+  display: inline-block;
+}
+
+.rightAlign{
+  text-align: right;
+}
+.leftAlign{
+  text-align: left;
+}
