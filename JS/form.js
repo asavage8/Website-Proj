@@ -2,10 +2,12 @@
       var nameIn = document.getElementById("name");
       var emailIn = document.getElementById("email");
       var messageIn = document.getElementById("Message");
+      var submitNode = document.getElementById("submitButton");
 
       nameIn.addEventListener("change", chkName, false);
       emailIn.addEventListener("change", chkEmail, false);
       messageIn.addEventListener("change", chkMessage, false);
+      submitNode.addEventListener("click",reset , false);
 
 //----------------------------------------------------------------------------------------------------------
       function chkName(event) {
@@ -28,4 +30,8 @@
         if(myMes.value.length == 0){
           alert("Please insert message.\n");
         }
+      }
+      function reset(event){
+        var form = document.getElementById("myForm");
+        form.reset();
       }
