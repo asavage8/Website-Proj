@@ -173,3 +173,20 @@ footer div{
 .leftAlign{
   text-align: left;
 }
+
+@media  screen and (max-width: 1000px){
+  #myForm input{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+  }
+  #myForm textarea{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+  }
+  #contactHalf div{
+    display: block;
+    font-size: 40px;
+  }
+}
