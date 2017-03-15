@@ -5,23 +5,19 @@
     <meta name ="author" content="Alexandra Savage">
     <title>Alexandra Savage</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.6.0/slick/slick-theme.css"/>
   </head>
   <body>
     <nav>
       <ul>
-          <li>
-            <a href="#About">About</a>
-          </li>
-          <li>
-            <a href="#Portfilo">Portfilo</a>
-          </li>
-          <li>
-            <a href="#Interest">Interest</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact</a>
-          </li>
-        </ul>
+      <?php
+        $bar = [ "About", "Portfolio", "Interest", "Contact"];
+        for($i=0; $i<sizeof($bar); $i++){
+          echo '<li> <a href="#'.$bar[$i].'">'.$bar[$i].'</a>';
+        }
+      ?>
+      </ul>
     </nav>
     <main>
       <section id ="Title">
@@ -43,8 +39,8 @@
             and see new perspectives everywhere.
         </p>
       </section>
-      <section id ="Portfilo">
-      <h1 class= "header">Portfilo</h1>
+      <section id ="Portfolio">
+      <h1 class= "header">Portfolio</h1>
         <p>
           To view my resume please click
           <a target="_blank" href="./resume.pdf"> here</a>.
@@ -79,13 +75,37 @@
             I think that it’s all in the angle. In my photos I often go for
             flair or intrigue but sometimes just a pretty photo will do.
         </p>
-        <div>
-          <img src="./Images/103_4949.jpg" alt="Cactus Room">
-          <img src="./Images/100_4653.jpg" alt="Ruins cool angle">
-          <img src="./Images/100_4401.jpg" alt="Outlook">
-          <img src="./Images/100_4657.jpg" alt="Arc picture">
+        <div class="carsoul">
+          <div class="Photographs">
+            <!-- $Pics=["103_4949.jpg","100_4653.jpg","100_4401.jpg","100_4657.jpg"]; -->
+            <img src="./Images/103_4949c.jpg" alt="Cactus Room">
+            <img src="./Images/100_4653c.jpg" alt="Ruins cool angle">
+            <img src="./Images/100_4401c.jpg" alt="Outlook">
+            <img src="./Images/100_4657c.jpg" alt="Arc picture">
+            <img src="./Images/100_1241.jpg" alt="Me and Mom">
+            <img src="./Images/100_1363.jpg" alt="Stormy Day">
+            <img src="./Images/100_1568c.jpg" alt="Effile">
+            <img src="./Images/100_4444.jpg" alt="Sunshine">
+            <img src="./Images/100_4457.jpg" alt="Sunshine Day">
+            <img src="./Images/100_4695c.jpg" alt="Sunshine in Church">
+            <img src="./Images/IMG_6102.jpg" alt="Cake">
+          </div>
+
+          <div class="Photographs-nav">
+            <img src="./Images/103_4949.jpg" alt="Cactus Room">
+            <img src="./Images/100_4653.jpg" alt="Ruins cool angle">
+            <img src="./Images/100_4401.jpg" alt="Outlook">
+            <img src="./Images/100_4657.jpg" alt="Arc picture">
+            <img src="./Images/100_1241c.jpg" alt="Me and Mom">
+            <img src="./Images/100_1363c.jpg" alt="Stormy Day">
+            <img src="./Images/100_1568.jpg" alt="Effile">
+            <img src="./Images/100_4444c.jpg" alt="Sunshine">
+            <img src="./Images/100_4457c.jpg" alt="Sunshine Day">
+            <img src="./Images/100_4695.jpg" alt="Sunshine in Church">
+            <img src="./Images/IMG_6102c.jpg" alt="Cake">
         </div>
-      </section>
+        </div>
+        </section>
       <section id ="Contact">
       <h1 class= "header">Contact</h1>
         <form id="myForm" action="">
@@ -116,5 +136,8 @@
       <div class="rightAlign">&copy;2017</div>
     </footer>
     <script type="text/javascript"  src="./JS/form.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="./slick-1.6.0/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./JS/slickjs.js"></script>
   </body>
 </html>
