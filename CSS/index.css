@@ -67,10 +67,28 @@ p{
   text-align: center;
 }
 
-.carsoul{
+.carousel{
   width: 560px;
   margin: 0 auto;
-  align: center !important;
+  text-align: center;
+  font: 20px helvetica, serif;
+}
+
+#Place-button{
+  background-color: #2d4576; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 16px helvetica, serif;
+  margin-bottom: 30px;
+}
+
+.Photographs{
+  box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.9);
+  padding: 10px;
 }
 
 #Title{
@@ -112,9 +130,11 @@ p{
 
 #Dance_pic{
   float: left;
-  width: 40% !important;
+  width: 40%;
   margin-left: 80px;
   margin-right: 40px;
+  box-shadow: inset 0px 0px 30px 30px rgba(0,0,0,0.9);
+  padding: 7px;
 }
 
 #Dance_p{

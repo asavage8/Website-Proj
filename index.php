@@ -26,24 +26,17 @@
       <section id ="About">
         <h1 class= "header">About Me</h1>
         <h2 class= "header">The Story of Me</h2>
-        <p>
-          A college student excited to leave the arching confines of the school
-           system and start a life.  As a lifelong resident of Pittsburgh, I
-            have spent my whole life here including going to college.
-            My 30 second elevator speech is that I am a student here at the
-            University of Pittsburgh, majoring in Mathematical Biology and
-            Computer Science.  Interested in pursuing a career in the database
-            field. I am a creative and problem solving soul and would like to
-            work somewhere that is both challenging and interesting.  Hopefully
-            my career path takes me down roads that allow me to move around
-            and see new perspectives everywhere.
+        <p><?php
+          include("Docs/about.php");
+        ?>
+
         </p>
       </section>
       <section id ="Portfolio">
       <h1 class= "header">Portfolio</h1>
         <p>
           To view my resume please click
-          <a target="_blank" href="./resume.pdf"> here</a>.
+          <a target="_blank" href="./Docs/resume.pdf"> here</a>.
         </p>
         <p>
           The below links bring you to my Github and LinkedIn:
@@ -54,16 +47,18 @@
       </section>
       <section id ="Interest">
       <h1 class= "header">Interest</h1>
-        <div id="Tiny_dancer"><h2 class="header"> Dance</h2>
-        <img id= "Dance_pic" src="./Images/100_3333.jpg" alt="Irish dancer">
-        <p id="Dance_p">
-        One of my favorite things in life is Dance.  I have been Irish dancing
-        since I was 4 years’ old. I grew up in the Irish dance culture, and
-        have participated in shows, competitions and group dances.  Throughout
-         the years I have tried a variety of other dance styles including ballet
-        and swing.  Any kind of dance is great as long as it keeps you moving
-         and entertained.
-       </p></div>
+        <div id="Tiny_dancer">
+          <h2 class="header"> Dance</h2>
+          <img id= "Dance_pic" src="./Images/100_3333.jpg" alt="Irish dancer">
+          <p id="Dance_p">
+          One of my favorite things in life is Dance.  I have been Irish dancing
+          since I was 4 years’ old. I grew up in the Irish dance culture, and
+          have participated in shows, competitions and group dances.  Throughout
+           the years I have tried a variety of other dance styles including ballet
+          and swing.  Any kind of dance is great as long as it keeps you moving
+           and entertained.
+          </p>
+        </div>
 
         <h2 class="header">Photography </h2>
         <p>
@@ -75,9 +70,8 @@
             I think that it’s all in the angle. In my photos I often go for
             flair or intrigue but sometimes just a pretty photo will do.
         </p>
-        <div class="carsoul">
+        <div class="carousel">
           <div class="Photographs">
-            <!-- $Pics=["103_4949.jpg","100_4653.jpg","100_4401.jpg","100_4657.jpg"]; -->
             <img src="./Images/103_4949c.jpg" alt="Cactus Room">
             <img src="./Images/100_4653c.jpg" alt="Ruins cool angle">
             <img src="./Images/100_4401c.jpg" alt="Outlook">
@@ -90,7 +84,6 @@
             <img src="./Images/100_4695c.jpg" alt="Sunshine in Church">
             <img src="./Images/IMG_6102.jpg" alt="Cake">
           </div>
-
           <div class="Photographs-nav">
             <img src="./Images/103_4949.jpg" alt="Cactus Room">
             <img src="./Images/100_4653.jpg" alt="Ruins cool angle">
@@ -103,9 +96,11 @@
             <img src="./Images/100_4457c.jpg" alt="Sunshine Day">
             <img src="./Images/100_4695.jpg" alt="Sunshine in Church">
             <img src="./Images/IMG_6102c.jpg" alt="Cake">
+          </div>
+          <h2>Guess the place above?</h2>
+          <button id="Place-button">Answer!</button>
         </div>
-        </div>
-        </section>
+      </section>
       <section id ="Contact">
       <h1 class= "header">Contact</h1>
         <form id="myForm" action="">
