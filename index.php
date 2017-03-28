@@ -103,24 +103,41 @@
       </section>
       <section id ="Contact">
       <h1 class= "header">Contact</h1>
-        <form id="myForm" action="">
+      <?php
+        $conn = new mysqli('localhost', 'root', '');
+        $sql = "CREATE DATABASE form";
+        $conn->query($sql);
+        $conn->close();
+        $conn = new mysqli('localhost', 'root', '', 'form');
+        $sql= "drop table accept";
+        $conn->query($sql);
+        $sql= "create table accept(
+          name varchar(40),
+          email varchar(35),
+          message varchar(500),
+          time timestamp
+          DEFAULT CURRENT_TIMESTAMP,
+          PRIMARY KEY (name, time)
+        )";
+        $conn->query($sql);
+        $conn->close();
+      ?>
+
+        <form id="myForm" action="./php/Insert.php" method="POST">
           <div id="contactHalf">
             <div>
-              <label>Name:</label>
-              <br />
-              <input type="text"  maxlength="30" id="name" placeholder="Your Name"/>
+              <label>Name:</label><br />
+              <input type="text"  maxlength="30" id="name" name="name" placeholder="Your Name"/>
               <br /><br />
             </div>
             <div>
-              <label>Email:</label>
-               <br />
-               <input type="email"  maxlength="40" id="email"  placeholder="your@email.com"/>
+              <label>Email:</label><br />
+               <input type="email"  maxlength="40" id="email" name="email" placeholder="your@email.com"/>
                <br /><br />
              </div>
            </div>
-          <label>Message: </label>
-          <br />
-          <textarea type="text" id="Message" placeholder="Message"></textarea>
+          <label>Message:</label><br />
+          <textarea type="text" id="Message" name="Message" placeholder="Message"></textarea>
           <br /><br />
         <input type="submit"  id="submitButton" onclick="submitForm()" />
       </form>
@@ -130,7 +147,7 @@
       <div class="leftAlign"> A. Savage</div>
       <div class="rightAlign">&copy;2017</div>
     </footer>
-    <script type="text/javascript"  src="./JS/form.js"> </script>
+    <!-- <script type="text/javascript"  src="./JS/form.js"> </script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="./slick-1.6.0/slick/slick.min.js"></script>
     <script type="text/javascript" src="./JS/slickjs.js"></script>
