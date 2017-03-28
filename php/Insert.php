@@ -8,6 +8,9 @@
   if($name != ''){
     $sql = "insert into accept (name, email, message)
     VALUES ('".$_POST["name"]."', '".$_POST["email"]."', '".$_POST["Message"]."')";
-    mysqli_query($conn, $sql)
+    mysqli_query($conn, $sql);
   }
+  header("Location: /Website-Proj/index.php");
+
+
 ?>
