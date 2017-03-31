@@ -11,6 +11,4 @@
     mysqli_query($conn, $sql);
   }
   header("Location: /Website-Proj/index.php");
-
-
 ?>
