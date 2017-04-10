@@ -26,10 +26,10 @@
       <section id ="About">
         <h1 class= "header">About Me</h1>
         <h2 class= "header">The Story of Me</h2>
-        <p><?php
+        <p>
+		<?php
           include("Docs/about.php");
         ?>
-
         </p>
       </section>
       <section id ="Portfolio">
@@ -51,24 +51,17 @@
           <h2 class="header"> Dance</h2>
           <img id= "Dance_pic" src="./Images/100_3333.jpg" alt="Irish dancer">
           <p id="Dance_p">
-          One of my favorite things in life is Dance.  I have been Irish dancing
-          since I was 4 years’ old. I grew up in the Irish dance culture, and
-          have participated in shows, competitions and group dances.  Throughout
-           the years I have tried a variety of other dance styles including ballet
-          and swing.  Any kind of dance is great as long as it keeps you moving
-           and entertained.
+		  <?php
+          include("Docs/Dance.php");
+			?>         
           </p>
         </div>
 
         <h2 class="header">Photography </h2>
         <p>
-          My photography career started off when my grandfather gave me and my
-           sister polaroid cameras.  It was such a fun hobby that when digital
-           camera came out I was the first one in the house to have one. Since
-           then I have had a few more cameras and have taken a lot more photos.
-            My photos my not always have the most interesting of subjects, but
-            I think that it’s all in the angle. In my photos I often go for
-            flair or intrigue but sometimes just a pretty photo will do.
+		 <?php
+          include("Docs/Photo.php");
+			?> 
         </p>
         <div class="carousel">
           <div class="Photographs">
